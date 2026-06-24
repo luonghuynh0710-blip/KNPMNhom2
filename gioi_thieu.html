@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giới thiệu bệnh viện TÂN THỂ HỌC</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f4f7fb;
+        }
+
+        /* Banner */
+
+        .banner {
+            height: 450px;
+            background:
+                linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+                url('bv2.png');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+        }
+
+        .banner-content h1 {
+            font-size: 55px;
+            margin-bottom: 15px;
+        }
+
+        .banner-content p {
+            font-size: 20px;
+        }
+
+        /* chung */
+
+        .container {
+            width: 85%;
+            margin: auto;
+        }
+
+        .section {
+            background: white;
+            margin: 40px 0;
+            padding: 35px;
+            border-radius: 15px;
+            box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .section h2 {
+            color: #0d3b66;
+            margin-bottom: 20px;
+        }
+
+        /* giám đốc */
+
+        .director {
+            display: flex;
+            gap: 40px;
+            align-items: center;
+        }
+
+        .director img {
+            width: 280px;
+            border-radius: 15px;
+        }
+
+        .director-info h3 {
+            color: #0077cc;
+            margin-bottom: 10px;
+            font-size: 28px;
+        }
+
+        .director-info p {
+            line-height: 1.8;
+        }
+
+        /* thống kê */
+
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .stat-card {
+            background: #0d3b66;
+            color: white;
+            text-align: center;
+            padding: 30px;
+            border-radius: 15px;
+        }
+
+        .stat-card h3 {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+
+        /* thư viện */
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        /* map */
+
+        .map {
+            width: 100%;
+            height: 450px;
+            border: none;
+            border-radius: 15px;
+        }
+
+        /* footer */
+
+        .footer {
+            background: #0d3b66;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+
+        @media(max-width:900px) {
+
+            .director {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .stats {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .gallery {
+                grid-template-columns: 1fr;
+            }
+
+            .banner-content h1 {
+                font-size: 35px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Banner -->
+
+    <section class="banner">
+        <div class="banner-content">
+            <h1>BỆNH VIỆN ĐA KHOA TIÊN THỂ HỌC </h1>
+            <p>Vì sức khỏe và nụ cười của bạn</p>
+        </div>
+    </section>
+
+    <div class="container">
+
+        <!-- Giới thiệu -->
+
+        <div class="section">
+            <h2>Giới thiệu chung</h2>
+
+            <p style="line-height:1.8">
+                Bệnh viện Đa khoa Tiên Thể Học hiện thân như một biểu tượng của sự hiện đại và chuẩn mực trong hành
+                trình
+                chăm sóc sức khỏe toàn diện. Nơi đây không chỉ sở hữu không gian y tế tân tiến, hệ thống quản lý thông
+                minh vượt trội cùng những trang thiết bị công nghệ đỉnh cao, mà còn là nơi dừng chân của những "người
+                thầy thuốc" tâm huyết, giàu kinh nghiệm và tận tụy với nghề. Trên hành trình phụng sự sự sống, chúng tôi
+                kiên định đặt sức khỏe và nụ cười an tâm của bệnh nhân lên vị trí tối thượng, liên tục chuyển mình, nâng
+                cao chất lượng dịch vụ để chạm đến những nấc thang mới của sự hoàn hảo và lòng tin yêu.
+            </p>
+        </div>
+
+        <!-- Giám đốc -->
+
+        <div class="section">
+
+            <h2>Ban Giám Đốc</h2>
+
+            <div class="director">
+
+                <img src="giamdoc.png" alt="Giám đốc">
+
+                <div class="director-info">
+
+                    <h3>GS Phan Huy Lê</h3>
+
+                    <p><strong>Giám đốc Bệnh viện Đa khoa Tiên Thể Học</strong></p>
+
+                    <p>
+                        Với hơn 35 năm kinh nghiệm trong lĩnh vực y tế,
+                        ông đã có nhiều đóng góp trong công tác quản lý,
+                        nâng cao chất lượng khám chữa bệnh và phát triển
+                        bệnh viện theo hướng hiện đại hóa.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Thống kê -->
+
+        <div class="section">
+
+            <h2>Thành tựu nổi bật</h2>
+
+            <div class="stats">
+
+                <div class="stat-card">
+                    <h3>50+</h3>
+                    <p> Y Bác sĩ</p>
+                </div>
+
+                <div class="stat-card">
+                    <h3>20+</h3>
+                    <p>Chuyên khoa</p>
+                </div>
+
+                <div class="stat-card">
+                    <h3>100.000+</h3>
+                    <p>Bệnh nhân</p>
+                </div>
+
+                <div class="stat-card">
+                    <h3>15+</h3>
+                    <p>Năm hoạt động</p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Tầm nhìn -->
+
+        <div class="section">
+
+            <h2>Tầm nhìn & Sứ mệnh</h2>
+
+            <p style="line-height:1.8">
+                Hướng tới tương lai của nền y học hiện đại, Bệnh viện Đa khoa Tân Thể Học khát khao vươn mình trở thành
+                biểu tượng y tế hàng đầu Việt Nam. Chúng tôi tiên phong kiến tạo một hệ sinh thái chăm sóc sức khỏe
+                thông minh, nơi công nghệ đột phá hòa quyện cùng tri thức y khoa để mang lại những giá trị sống đích
+                thực cho cộng đồng.
+            </p>
+
+            <br>
+
+            <p style="line-height:1.8">
+                Mang trên vai sứ mệnh phụng sự sự sống, Tân Thể Học cam kết trao gửi dịch vụ y tế chuẩn mực cao: an toàn
+                tuyệt đối, tối ưu hiệu quả và đong đầy lòng nhân ái. Chúng tôi nỗ lực biến mỗi hành trình chữa lành
+                thành một trải nghiệm ấm áp, thân thiện, trở thành điểm tựa sức khỏe vững chãi và đáng tin cậy cho mọi
+                người dân.
+            </p>
+
+        </div>
+
+        <!-- Thư viện -->
+
+        <div class="section">
+
+            <h2>Hình ảnh bệnh viện</h2>
+
+            <div class="gallery">
+
+                <img src="bv1.png">
+                <img src="bv2.png">
+                <img src="bv3.png">
+
+            </div>
+
+        </div>
+
+        <!-- Google map -->
+
+        <div class="section">
+
+            <h2>Vị trí bệnh viện</h2>
+
+            <iframe class="map"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.554562856415!2d105.81226417503093!3d21.010485380634282!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ac9d65911ef1%3A0x6a4df45cca423e18!2zMTIwIFAuIFnDqm4gTOG6o25nLCDEkOG7k25nIMSQYSwgSMOgIE7hu5lpIDEwMDAwMCwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1780931607307!5m2!1svi!2s"
+                loading="lazy">
+            </iframe>
+
+        </div>
+
+    </div>
+
+    <div class="footer">
+        © 2026 Bệnh viện Đa khoa Tân Thể Học
+    </div>
+
+</body>
+
+</html>

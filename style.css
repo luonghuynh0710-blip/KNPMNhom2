@@ -1,0 +1,548 @@
+
+/* ================= RESET ================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+/* ================= BODY ================= */
+
+body{
+
+    background:#edf5ff;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    min-height:100vh;
+
+    padding:30px;
+
+}
+
+/* ================= KHUNG CHÍNH ================= */
+
+.container{
+
+    width:1200px;
+
+    background:#ffffff;
+
+    display:flex;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    box-shadow:0 5px 20px rgba(0,0,0,.15);
+
+}
+
+/* ================= BÊN TRÁI ================= */
+
+.left{
+
+    width:35%;
+
+    background:linear-gradient(135deg,#2c8cff,#4db6ff);
+
+    color:white;
+
+    padding:50px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+}
+
+.left h1{
+
+    font-size:42px;
+
+    margin-bottom:15px;
+
+}
+
+.left p{
+
+    font-size:18px;
+
+    margin-bottom:35px;
+
+}
+
+.item{
+
+    display:flex;
+
+    margin-bottom:30px;
+
+}
+
+.item i{
+
+    width:60px;
+
+    height:60px;
+
+    background:white;
+
+    color:#2196f3;
+
+    border-radius:50%;
+
+    text-align:center;
+
+    line-height:60px;
+
+    font-size:28px;
+
+    margin-right:20px;
+
+}
+
+.item h3{
+
+    margin-bottom:5px;
+
+}
+
+.item p{
+
+    margin:0;
+
+    font-size:15px;
+
+}
+
+/* ================= BÊN PHẢI ================= */
+
+.right{
+
+    width:65%;
+
+    padding:45px;
+
+}
+
+.right h2{
+
+    text-align:center;
+
+    color:#1976d2;
+
+    margin-bottom:30px;
+
+    font-size:35px;
+
+}
+
+/* ================= FORM ================= */
+
+.row{
+
+    display:flex;
+
+    gap:20px;
+
+}
+
+input,
+select{
+
+    width:100%;
+
+    padding:14px;
+
+    border:1px solid #d5d5d5;
+
+    border-radius:8px;
+
+    outline:none;
+
+    margin-bottom:18px;
+
+    font-size:15px;
+
+}
+
+input:focus,
+select:focus{
+
+    border:1px solid #2196f3;
+
+}
+
+/* ================= CHECKBOX ================= */
+
+label{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    margin-top:10px;
+
+    margin-bottom:20px;
+
+    color:#555;
+
+    font-size:15px;
+
+}
+
+label input{
+
+    width:auto;
+
+    margin:0;
+
+}
+
+/* ================= BUTTON ================= */
+
+button{
+
+    width:100%;
+
+    padding:15px;
+
+    border:none;
+
+    background:#2196f3;
+
+    color:white;
+
+    font-size:18px;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+button:hover{
+
+    background:#1976d2;
+
+}
+
+/* ================= LINK ================= */
+
+.login{
+
+    text-align:center;
+
+    margin-top:25px;
+
+}
+
+.login a{
+
+    color:#2196f3;
+
+    text-decoration:none;
+
+    font-weight:bold;
+
+}
+
+.login a:hover{
+
+    text-decoration:underline;
+
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:900px){
+
+.container{
+
+    flex-direction:column;
+
+}
+
+.left{
+
+    width:100%;
+
+}
+
+.right{
+
+    width:100%;
+
+}
+
+.row{
+
+    flex-direction:column;
+
+    gap:0;
+
+}
+
+}
+body{
+    margin:0;
+    padding:0;
+    background:#f5f8fc;
+    font-family:Arial,Helvetica,sans-serif;
+}
+
+header{
+    width:100%;
+    height:80px;
+    background:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 60px;
+    box-shadow:0 2px 10px rgba(0,0,0,.1);
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:1000;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+}
+
+.logo i{
+    color:#2196f3;
+    font-size:35px;
+    margin-right:10px;
+}
+
+.logo h2{
+    color:#1976d2;
+}
+
+nav a{
+    text-decoration:none;
+    color:#444;
+    margin:0 15px;
+    font-size:17px;
+}
+
+nav a:hover{
+    color:#2196f3;
+}
+
+.menu a{
+    text-decoration:none;
+    margin-left:15px;
+    color:#1976d2;
+}
+
+.menu .btn{
+    background:#2196f3;
+    color:white;
+    padding:10px 20px;
+    border-radius:30px;
+}
+
+.banner{
+    margin-top:80px;
+    width:100%;
+    height:650px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:linear-gradient(135deg,#2196f3,#4fc3f7);
+    padding:0 80px;
+}
+
+.banner-left{
+    width:50%;
+    color:white;
+}
+
+.banner-left h1{
+    font-size:60px;
+    margin-bottom:20px;
+}
+
+.banner-left p{
+    font-size:22px;
+    margin-bottom:30px;
+}
+
+.banner-left button{
+    width:200px;
+    padding:15px;
+    background:white;
+    color:#2196f3;
+    border:none;
+    border-radius:30px;
+    cursor:pointer;
+}
+
+.banner-right{
+    width:45%;
+}
+
+.banner-right img{
+    width:100%;
+}
+
+.service{
+    width:90%;
+    margin:80px auto;
+}
+
+.service h2{
+    text-align:center;
+    color:#1976d2;
+    margin-bottom:40px;
+}
+
+.service-box{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:25px;
+}
+
+.card{
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 0 10px rgba(0,0,0,.1);
+}
+
+.card i{
+    font-size:45px;
+    color:#2196f3;
+    margin-bottom:20px;
+}
+
+.special{
+    width:90%;
+    margin:80px auto;
+}
+
+.special h2{
+    text-align:center;
+    color:#1976d2;
+    margin-bottom:40px;
+}
+
+.special-box{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+.special-box div{
+    background:white;
+    padding:25px;
+    border-radius:10px;
+    text-align:center;
+    box-shadow:0 0 10px rgba(0,0,0,.1);
+}
+
+.doctor{
+    width:90%;
+    margin:80px auto;
+}
+
+.doctor h2{
+    text-align:center;
+    color:#1976d2;
+    margin-bottom:40px;
+}
+
+.doctor-box{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+}
+
+.doctor-card{
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 0 10px rgba(0,0,0,.1);
+}
+
+.doctor-card img{
+    width:150px;
+    height:150px;
+    border-radius:50%;
+    object-fit:cover;
+}
+
+.doctor-card h3{
+    margin-top:15px;
+}
+
+.doctor-card p{
+    color:#666;
+}
+
+.doctor-card button{
+    width:150px;
+    padding:12px;
+    background:#2196f3;
+    color:white;
+    border:none;
+    border-radius:25px;
+    margin-top:15px;
+    cursor:pointer;
+}
+
+footer{
+    background:#1976d2;
+    color:white;
+    text-align:center;
+    padding:30px;
+    margin-top:80px;
+}
+
+@media(max-width:900px){
+
+header{
+    flex-direction:column;
+    height:auto;
+    padding:20px;
+}
+
+.banner{
+    flex-direction:column;
+    height:auto;
+    padding:40px;
+    text-align:center;
+}
+
+.banner-left,
+.banner-right{
+    width:100%;
+}
+
+.service-box,
+.special-box,
+.doctor-box{
+    grid-template-columns:1fr;
+}
+
+}
+
+

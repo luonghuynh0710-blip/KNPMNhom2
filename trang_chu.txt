@@ -1,0 +1,185 @@
+```php
+<?php
+include("cau_hinh/ket_noi.php");
+
+// Lấy 6 chuyên khoa
+$sql_chuyen_khoa = "SELECT * FROM chuyen_khoa LIMIT 6";
+$query_chuyen_khoa = mysqli_query($ket_noi,$sql_chuyen_khoa);
+
+// Lấy 3 bác sĩ
+$sql_bac_si = "SELECT * FROM bac_si LIMIT 3";
+$query_bac_si = mysqli_query($ket_noi,$sql_bac_si);
+
+?>
+
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>Đặt lịch khám bệnh trực tuyến</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+
+<i class="fa-solid fa-heart-pulse"></i>
+
+<h2>HealthCare</h2>
+
+</div>
+
+<nav>
+
+<a href="index.php">Trang chủ</a>
+
+<a href="#">Chuyên khoa</a>
+
+<a href="#">Bác sĩ</a>
+
+<a href="#">Tin tức</a>
+
+<a href="#">Liên hệ</a>
+
+</nav>
+
+<div>
+
+<a href="dang_nhap.php">Đăng nhập</a>
+
+<a href="dang_ky.php">Đăng ký</a>
+
+</div>
+
+</header>
+
+
+<section class="banner">
+
+<div>
+
+<h1>ĐẶT LỊCH KHÁM BỆNH TRỰC TUYẾN</h1>
+
+<p>Đặt lịch nhanh chóng với đội ngũ bác sĩ giàu kinh nghiệm.</p>
+
+<a href="dang_ky.php">
+
+<button>Đặt lịch ngay</button>
+
+</a>
+
+</div>
+
+</section>
+
+
+<section>
+
+<h2>CHUYÊN KHOA</h2>
+
+<div class="grid">
+
+<?php
+
+while($row = mysqli_fetch_assoc($query_chuyen_khoa)){
+
+?>
+
+<div class="box">
+
+<h3>
+
+<?php echo $row['ten_chuyen_khoa']; ?>
+
+</h3>
+
+</div>
+
+<?php
+
+}
+
+?>
+
+</div>
+
+</section>
+
+
+
+<section>
+
+<h2>BÁC SĨ TIÊU BIỂU</h2>
+
+<div class="grid">
+
+<?php
+
+while($row = mysqli_fetch_assoc($query_bac_si)){
+
+?>
+
+<div class="doctor">
+
+<img src="hinh_anh/<?php echo $row['hinh_anh']; ?>">
+
+<h3>
+
+<?php echo $row['ho_ten']; ?>
+
+</h3>
+
+<p>
+
+<?php echo $row['hoc_vi']; ?>
+
+</p>
+
+<a href="#">
+
+<button>
+
+Đặt lịch
+
+</button>
+
+</a>
+
+</div>
+
+<?php
+
+}
+
+?>
+
+</div>
+
+</section>
+
+
+<footer>
+
+<p>
+
+© Website Đặt Lịch Khám Bệnh Trực Tuyến
+
+</p>
+
+</footer>
+
+</body>
+
+</html>
+```
