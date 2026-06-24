@@ -6,6 +6,8 @@
 - MySQL
 - Bootstrap
 - XAMPP
+- HTML
+- VS Code
 
 ## Hướng dẫn cài đặt
 
